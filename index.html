@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 2px;
+  background-color: gray;
+  height: 100%;
+}
+
+.header {
+  padding: 90px;
+  text-align: center;
+  background: white;
+  background-image: url('school.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px black;
+}
+
+nav {
+  overflow: hidden;
+  background-color: green;
+  width:94%;
+  border-style: solid;
+  margin: 40px;
+  display: inline-block;
+  font-size: 20px;
+
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 60%;
+  margin: 45px;
+  border-style: solid;
+  background-color: springgreen;
+  padding: 20px;
+  
+}
+
+.column1 {
+  float: left;
+  width: 26%;
+  background-color: springgreen;
+  padding: 20px;
+  margin: 45px;
+  border-style: solid;
+  height: 50%;
+}
+.column2 {
+  float: left;
+  width: 26%;
+  background-color: springgreen;
+  padding: 20px;
+  margin: 45px;
+  border-style: solid;  
+  height: 61%;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  background: springgreen;
+  margin: 45px;
+  border-style: solid;
+  padding: 20px;
+}
+
+
+@media all and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+article{
+	clear: both;
+	border-color: black;
+	border-style: solid;
+	margin: 43px;
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="header">
+  <h1 style="color: green">SVNHS</h1>
+</div>
+  <a href="#">Home</a>
+  <a href="#">More</a>
+  <a href="#">About</a>
+  <a href="#" style="float:right">Log in</a>
+</nav>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>San Vicente National High School</h2>
+	  <h3>Spring Break</h3>
+      <img src="Camping.jpg" width="715" height="500">
+      <p>Spring Break a week's vacation for students in the spring or the month of March where
+	  San Vicente National High School's first ever camping trip outside of school for Senior High students happened as
+	  where the students can experience the thrill of mountain life and build unforgettable memories. 
+	  As one of the Senior High students who participated in the camping, I can testify to the fact that camping has changed me. 
+	  The explanation for this is that camping builds and strengthens our ties as a group, 
+	  and it allows us to become closer to others who participated in the camping trip...
+	  </p>
+    </div>
+  </div>
+  
+  <div class="column1" id="1">
+    <div class="card">
+      <h2>About</h2>
+      <p>San Vicente National High School - Baguio is a public secondary educational institution located San Vicente, Baguio City.
+	  Presently, the school caters both junior and senior high school accordance with the resolution that was ordered by the Department of Education (DepEd).</p>
+    </div>
+	</div>
+	
+  <div class="column2" id="2">
+    <div class="card">
+      <h3>Popular Post</h3>
+      <img src="toppost.jpg" alt="Epic" style="width:296px;height:270px;">
+      </div>
+    </div>
+	</div>
+<footer>
+<div class="footer">
+<h3>Contact Information</h3>
+  <p><b>Contact Address:</b> Bakakeng Norte, Baguio City <br> 
+  <b>Contact Number:</b> 09498985269 <br>
+  <b>Email:</b> hikigayah1@gmail.com <br> 
+  <b>Facebook:</b> Lenlen allen</p>
+</div>
+</footer>
+</body>
+</html>
